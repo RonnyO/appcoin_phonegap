@@ -1,7 +1,7 @@
 # ANDROID / ECLIPSE
 
-plugins
-platforms
+/plugins
+/platforms
 
 # built application files
 *.apk
