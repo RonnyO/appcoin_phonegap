@@ -37,13 +37,13 @@ function createConfigXML() {
 }
 
 function _exec(cmd, callback) {
-	console.log("exec: " + cmd);
+	console.log(cmd);
 	exec(cmd, function (error, stdout, stderr) {
 	    if (error !== null) {
 	      console.log('exec error: ' + error);
 	      return callback(error, null)
 	    }
-	    console.log('exec OK');
+	    console.log('OK');
 	    callback(null, null);
 	});
 }
@@ -64,6 +64,8 @@ var PLUGINS = [
 
 async.waterfall([
 	function (callback) {
+		console.log("Phonegap build tool 0.0.1")
+		console.log("***** CLEANING *****");
 		_exec("rm -R platforms/android", callback);
 	},
 	function (unused, callback) {
@@ -73,7 +75,8 @@ async.waterfall([
 		_exec("rm -R plugins", callback);
 	},
 	function (unused, callback) {
-		console.log("Creating config.xml");
+		console.log("***** CREATING PHONEGAP ENVIRONMENT *****");
+		console.log("creating config.xml\nOK");
 		createConfigXML();
 		callback(null, null);
 	},
@@ -84,7 +87,7 @@ async.waterfall([
 		_exec("phonegap platform add android", callback);
 	},
 	function (unused, callback) {
-		console.log("Creating platforms/android/ant.properties");
+		console.log("creating platforms/android/ant.properties\nOK");
 		write_file("platforms/android/ant.properties", "key.store=../../signing/android/release.keystore\nkey.alias=my_alias");
 		callback(null, null);
 	},
