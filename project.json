@@ -1,0 +1,23 @@
+{
+"local":
+	{
+	"protocol": "'http:'",
+	"host" : "'localhost.local:3000'",
+	"marketName" : "'levmarket'",
+	"bundleID" : "appcoin.market.test"
+	},
+"stage":
+	{
+	"protocol": "'https:'",
+	"host" : "'mirror-appcoin-production.herokuapp.com'",
+	"marketName" : "'levmarket'",
+	"bundleID" : "appcoin.market.test"
+	},
+"levmarket":
+	{
+	"protocol": "'https:'",
+	"host" : "'www.levmarket.co.il'",
+	"marketName" : "'levmarket'",
+	"bundleID" : "com.appcoin.levmarket"
+	}
+}
