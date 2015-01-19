@@ -4,20 +4,51 @@
 	"protocol": "'http:'",
 	"host" : "'localhost.local:3000'",
 	"marketName" : "'levmarket'",
-	"bundleID" : "appcoin.market.test"
+	"bundleID" : "appcoin.market.test",
+	"appName": "MarketTest",
+	"description": "Local Description",
+	"authorEmail": "yotam@appcoin.me",
+	"authorName": "Appcoin",
+	"facebookAppID": "139398209567366",
+	"facebookAppName": "Appcoin Test"
 	},
 "stage":
 	{
 	"protocol": "'https:'",
 	"host" : "'mirror-appcoin-production.herokuapp.com'",
 	"marketName" : "'levmarket'",
-	"bundleID" : "appcoin.market.test"
+	"bundleID" : "appcoin.market.test",
+	"appName": "MarketTest",
+	"description": "Stage Description",
+	"authorEmail": "yotam@appcoin.me",
+	"authorName": "Appcoin",
+	"facebookAppID": "139398209567366",
+	"facebookAppName": "Appcoin Test"
 	},
 "levmarket":
 	{
 	"protocol": "'https:'",
 	"host" : "'www.levmarket.co.il'",
 	"marketName" : "'levmarket'",
-	"bundleID" : "com.appcoin.levmarket"
+	"bundleID" : "com.appcoin.levmarket",
+	"appName": "Lev Market",
+	"description": "Lev Market Description",
+	"authorEmail": "yotam@appcoin.me",
+	"authorName": "Appcoin",
+	"facebookAppID": "1493447430881594",
+	"facebookAppName": "Lev Market"
+	},
+"girim":
+	{
+	"protocol": "'https:'",
+	"host" : "'girim.rondor.org'",
+	"marketName" : "'girim'",
+	"bundleID" : "com.rondor.girim",
+	"appName": "Girim",
+	"description": "Girim Description",
+	"authorEmail": "yotam@appcoin.me",
+	"authorName": "Appcoin",
+	"facebookAppID": "423664101072038",
+	"facebookAppName": "Girim"
 	}
 }

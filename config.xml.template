@@ -5,4 +5,28 @@
     <author email="_AUTHOR_EMAIL_" href="">_AUTHOR_NAME_</author>
     <content src="app.html" />
     <access origin="*" />
+
+    <platform name="ios">
+          <icon src="icon_assets/_TARGET_/ios/icon-60.png" width="60" height="60" />
+          <icon src="icon_assets/_TARGET_/ios/icon-60@2x.png" width="120" height="120" />
+          <icon src="icon_assets/_TARGET_/ios/icon-76.png" width="76" height="76" />
+          <icon src="icon_assets/_TARGET_/ios/icon-76@2x.png" width="152" height="152" />
+          <icon src="icon_assets/_TARGET_/ios/icon-40.png" width="40" height="40" />
+          <icon src="icon_assets/_TARGET_/ios/icon-40@2x.png" width="80" height="80" />
+          <icon src="icon_assets/_TARGET_/ios/icon.png" width="57" height="57" />
+          <icon src="icon_assets/_TARGET_/ios/icon@2x.png" width="114" height="114" />
+          <icon src="icon_assets/_TARGET_/ios/icon-72.png" width="72" height="72" />
+          <icon src="icon_assets/_TARGET_/ios/icon-72@2x.png" width="144" height="144" />
+          <icon src="icon_assets/_TARGET_/ios/icon-small.png" width="29" height="29" />
+          <icon src="icon_assets/_TARGET_/ios/icon-small@2x.png" width="58" height="58" />
+          <icon src="icon_assets/_TARGET_/ios/icon-50.png" width="50" height="50" />
+          <icon src="icon_assets/_TARGET_/ios/icon-50@2x.png" width="100" height="100" />
+     </platform>
+
+     <platform name="android">
+          <icon src="icon_assets/_TARGET_/android/icon-40.png" density="ldpi" />
+          <icon src="icon_assets/_TARGET_/android/icon-76.png" density="mdpi" />
+          <icon src="icon_assets/_TARGET_/android/icon-120.png" density="hdpi" />
+          <icon src="icon_assets/_TARGET_/android/icon-152.png" density="xhdpi" />
+     </platform>
 </widget>

@@ -5,6 +5,13 @@ var path = require('path');
 var _ = require('underscore');
 
 var rootdir = process.argv[2];
+var configobj = JSON.parse(fs.readFileSync("project.json", 'utf8'));
+
+var target = "stage";
+if (process.env.TARGET) {
+    target = process.env.TARGET;
+}
+var config = configobj[target];
 
 function replace_strings_in_file(filename, out_filename, replace_map) {
     var data = fs.readFileSync(filename, 'utf8');
@@ -20,22 +27,23 @@ function write_file(filename, contents) {
 
 function createConfigXML() {
 	replace_strings_in_file('config.xml.template', 'config.xml', {
-		_BUNDLE_ID_: 'appcoin.market.test',
-		_APP_NAME_: 'MarketTest',
-		_DESCRIPTION_: 'Test application',
-		_AUTHOR_EMAIL_: 'yotam@appcoin.me',
-		_AUTHOR_NAME_: 'Appcoin',
+		_BUNDLE_ID_: config.bundleID,
+		_APP_NAME_: config.appName,
+		_DESCRIPTION_: config.description,
+		_AUTHOR_EMAIL_: config.authorEmail,
+		_AUTHOR_NAME_: config.authorName,
+		_TARGET_: target
 	});
 }
 
 function _exec(cmd, callback) {
 	console.log("exec: " + cmd);
 	exec(cmd, function (error, stdout, stderr) {
-	    console.log(stdout);
 	    if (error !== null) {
 	      console.log('exec error: ' + error);
 	      return callback(error, null)
 	    }
+	    console.log('exec OK');
 	    callback(null, null);
 	});
 }
@@ -86,8 +94,8 @@ async.waterfall([
 		}, callback);
 	},
 	function (callback) {
-		var appID = 139398209567366;
-		var appName = "Appcoin Test";
+		var appID = config.facebookAppID;
+		var appName = config.facebookAppName;
 		_exec('phonegap plugin add ./phonegap-facebook-plugin-master --variable APP_ID="' + appID + '" --variable APP_NAME="'+ appName +'"', callback);
 	}
 ], function (err) {
