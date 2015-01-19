@@ -43,7 +43,7 @@
 	"protocol": "'https:'",
 	"host" : "'girim.rondor.org'",
 	"marketName" : "'girim'",
-	"bundleID" : "com.rondor.girim",
+	"bundleID" : "rondor.market.girim",
 	"appName": "Girim",
 	"description": "Girim Description",
 	"authorEmail": "yotam@appcoin.me",
