@@ -59,7 +59,8 @@ var PLUGINS = [
 	"org.apache.cordova.file",
 	"org.apache.cordova.geolocation",
 	"org.apache.cordova.inappbrowser",
-	"org.apache.cordova.vibration"
+	"org.apache.cordova.vibration",
+	"io.branchmetrics.branchreferral",
 ];
 
 async.waterfall([
