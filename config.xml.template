@@ -7,26 +7,49 @@
     <access origin="*" />
 
     <platform name="ios">
-          <icon src="icon_assets/_TARGET_/ios/icon-60.png" width="60" height="60" />
-          <icon src="icon_assets/_TARGET_/ios/icon-60@2x.png" width="120" height="120" />
-          <icon src="icon_assets/_TARGET_/ios/icon-76.png" width="76" height="76" />
-          <icon src="icon_assets/_TARGET_/ios/icon-76@2x.png" width="152" height="152" />
-          <icon src="icon_assets/_TARGET_/ios/icon-40.png" width="40" height="40" />
-          <icon src="icon_assets/_TARGET_/ios/icon-40@2x.png" width="80" height="80" />
-          <icon src="icon_assets/_TARGET_/ios/icon.png" width="57" height="57" />
-          <icon src="icon_assets/_TARGET_/ios/icon@2x.png" width="114" height="114" />
-          <icon src="icon_assets/_TARGET_/ios/icon-72.png" width="72" height="72" />
-          <icon src="icon_assets/_TARGET_/ios/icon-72@2x.png" width="144" height="144" />
-          <icon src="icon_assets/_TARGET_/ios/icon-small.png" width="29" height="29" />
-          <icon src="icon_assets/_TARGET_/ios/icon-small@2x.png" width="58" height="58" />
-          <icon src="icon_assets/_TARGET_/ios/icon-50.png" width="50" height="50" />
-          <icon src="icon_assets/_TARGET_/ios/icon-50@2x.png" width="100" height="100" />
+        <icon src="res/icon/_TARGET_/ios/icon-60.png" width="60" height="60" />
+        <icon src="res/icon/_TARGET_/ios/icon-60@2x.png" width="120" height="120" />
+        <icon src="res/icon/_TARGET_/ios/icon-76.png" width="76" height="76" />
+        <icon src="res/icon/_TARGET_/ios/icon-76@2x.png" width="152" height="152" />
+        <icon src="res/icon/_TARGET_/ios/icon-40.png" width="40" height="40" />
+        <icon src="res/icon/_TARGET_/ios/icon-40@2x.png" width="80" height="80" />
+        <icon src="res/icon/_TARGET_/ios/icon.png" width="57" height="57" />
+        <icon src="res/icon/_TARGET_/ios/icon@2x.png" width="114" height="114" />
+        <icon src="res/icon/_TARGET_/ios/icon-72.png" width="72" height="72" />
+        <icon src="res/icon/_TARGET_/ios/icon-72@2x.png" width="144" height="144" />
+        <icon src="res/icon/_TARGET_/ios/icon-small.png" width="29" height="29" />
+        <icon src="res/icon/_TARGET_/ios/icon-small@2x.png" width="58" height="58" />
+        <icon src="res/icon/_TARGET_/ios/icon-50.png" width="50" height="50" />
+        <icon src="res/icon/_TARGET_/ios/icon-50@2x.png" width="100" height="100" />
      </platform>
 
      <platform name="android">
-          <icon src="icon_assets/_TARGET_/android/icon-40.png" density="ldpi" />
-          <icon src="icon_assets/_TARGET_/android/icon-76.png" density="mdpi" />
-          <icon src="icon_assets/_TARGET_/android/icon-120.png" density="hdpi" />
-          <icon src="icon_assets/_TARGET_/android/icon-152.png" density="xhdpi" />
+        <icon src="res/icon/_TARGET_/android/icon-40.png" density="ldpi" />
+        <icon src="res/icon/_TARGET_/android/icon-76.png" density="mdpi" />
+        <icon src="res/icon/_TARGET_/android/icon-120.png" density="hdpi" />
+        <icon src="res/icon/_TARGET_/android/icon-152.png" density="xhdpi" />
      </platform>
+
+     <platform name="android">
+        <splash src="res/splash/_TARGET_/android/hdpi_480x800.png" density="land-hdpi"/>
+        <splash src="res/splash/_TARGET_/android/ldpi_200x320.png" density="land-ldpi"/>
+        <splash src="res/splash/_TARGET_/android/mdpi_320x480.png" density="land-mdpi"/>
+        <splash src="res/splash/_TARGET_/android/xhdpi_720x1280.png" density="land-xhdpi"/>
+
+        <splash src="res/splash/_TARGET_/android/hdpi_480x800.png" density="port-hdpi"/>
+        <splash src="res/splash/_TARGET_/android/ldpi_200x320.png" density="port-ldpi"/>
+        <splash src="res/splash/_TARGET_/android/mdpi_320x480.png" density="port-mdpi"/>
+        <splash src="res/splash/_TARGET_/android/xhdpi_720x1280.png" density="port-xhdpi"/>
+    </platform>
+
+    <platform name="ios">
+        <splash src="res/splash/_TARGET_/ios/iPhone-320x480.png" width="320" height="480"/>        
+        <splash src="res/splash/_TARGET_/ios/iPhone-Retina-640x960.png" width="640" height="960"/>
+
+        <splash src="res/splash/_TARGET_/ios/iPad-768x1024.png" width="768" height="1024"/>
+        <splash src="res/splash/_TARGET_/ios/iPad-Retina-1536x2048.png" width="1536" height="2048"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-5-Retina-640x1136.png" width="640" height="1136"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-6-750x1334.png" width="750" height="1334"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-6-Plus-1242x2208.png" width="1242" height="2208"/>
+    </platform>
 </widget>
