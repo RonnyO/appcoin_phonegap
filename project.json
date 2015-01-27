@@ -14,7 +14,7 @@
 	},
 "stage":
 	{
-	"protocol": "'https:'",
+	"protocol": "'http:'",
 	"host" : "'mirror-appcoin-production.herokuapp.com'",
 	"marketName" : "'levmarket'",
 	"bundleID" : "appcoin.market.test",
