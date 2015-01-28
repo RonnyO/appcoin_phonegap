@@ -6,6 +6,8 @@
     <content src="app.html" />
     <access origin="*" />
 
+    <preference name="SplashScreen" value="screen"/>
+
     <platform name="ios">
         <icon src="res/icon/_TARGET_/ios/icon-60.png" width="60" height="60" />
         <icon src="res/icon/_TARGET_/ios/icon-60@2x.png" width="120" height="120" />
@@ -31,25 +33,25 @@
      </platform>
 
      <platform name="android">
-        <splash src="res/splash/_TARGET_/android/hdpi_480x800.png" density="land-hdpi"/>
-        <splash src="res/splash/_TARGET_/android/ldpi_200x320.png" density="land-ldpi"/>
-        <splash src="res/splash/_TARGET_/android/mdpi_320x480.png" density="land-mdpi"/>
-        <splash src="res/splash/_TARGET_/android/xhdpi_720x1280.png" density="land-xhdpi"/>
+        <splash src="res/splash/_TARGET_/android/hdpi_480x800.jpg" density="land-hdpi"/>
+        <splash src="res/splash/_TARGET_/android/ldpi_200x320.jpg" density="land-ldpi"/>
+        <splash src="res/splash/_TARGET_/android/mdpi_320x480.jpg" density="land-mdpi"/>
+        <splash src="res/splash/_TARGET_/android/xhdpi_720x1280.jpg" density="land-xhdpi"/>
 
-        <splash src="res/splash/_TARGET_/android/hdpi_480x800.png" density="port-hdpi"/>
-        <splash src="res/splash/_TARGET_/android/ldpi_200x320.png" density="port-ldpi"/>
-        <splash src="res/splash/_TARGET_/android/mdpi_320x480.png" density="port-mdpi"/>
-        <splash src="res/splash/_TARGET_/android/xhdpi_720x1280.png" density="port-xhdpi"/>
+        <splash src="res/splash/_TARGET_/android/hdpi_480x800.jpg" density="port-hdpi"/>
+        <splash src="res/splash/_TARGET_/android/ldpi_200x320.jpg" density="port-ldpi"/>
+        <splash src="res/splash/_TARGET_/android/mdpi_320x480.jpg" density="port-mdpi"/>
+        <splash src="res/splash/_TARGET_/android/xhdpi_720x1280.jpg" density="port-xhdpi"/>
     </platform>
 
     <platform name="ios">
-        <splash src="res/splash/_TARGET_/ios/iPhone-320x480.png" width="320" height="480"/>        
-        <splash src="res/splash/_TARGET_/ios/iPhone-Retina-640x960.png" width="640" height="960"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-320x480.jpg" width="320" height="480"/>        
+        <splash src="res/splash/_TARGET_/ios/iPhone-Retina-640x960.jpg" width="640" height="960"/>
 
-        <splash src="res/splash/_TARGET_/ios/iPad-768x1024.png" width="768" height="1024"/>
-        <splash src="res/splash/_TARGET_/ios/iPad-Retina-1536x2048.png" width="1536" height="2048"/>
-        <splash src="res/splash/_TARGET_/ios/iPhone-5-Retina-640x1136.png" width="640" height="1136"/>
-        <splash src="res/splash/_TARGET_/ios/iPhone-6-750x1334.png" width="750" height="1334"/>
-        <splash src="res/splash/_TARGET_/ios/iPhone-6-Plus-1242x2208.png" width="1242" height="2208"/>
+        <splash src="res/splash/_TARGET_/ios/iPad-768x1024.jpg" width="768" height="1024"/>
+        <splash src="res/splash/_TARGET_/ios/iPad-Retina-1536x2048.jpg" width="1536" height="2048"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-5-Retina-640x1136.jpg" width="640" height="1136"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-6-750x1334.jpg" width="750" height="1334"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-6-Plus-1242x2208.jpg" width="1242" height="2208"/>
     </platform>
 </widget>
