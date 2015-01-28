@@ -2,7 +2,7 @@
 "local":
 	{
 	"protocol": "'http:'",
-	"host" : "'localhost.local:3000'",
+	"host" : "'10.0.0.47:3000'",
 	"marketName" : "'levmarket'",
 	"bundleID" : "appcoin.market.test",
 	"appName": "MarketTest",
