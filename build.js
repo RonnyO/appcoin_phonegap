@@ -50,7 +50,7 @@ function _exec(cmd, callback) {
 
 var PLUGINS = [
 	"https://github.com/phonegap-build/StatusBarPlugin.git",
-	"https://github.com/phonegap-build/PushPlugin.git",
+	"https://github.com/ariel-appcoin/PushPlugin.git",
 	"https://github.com/VersoSolutions/CordovaClipboard.git",
 	"https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
 	"org.apache.cordova.camera",
@@ -65,7 +65,7 @@ var PLUGINS = [
 
 async.waterfall([
 	function (callback) {
-		console.log("Phonegap build tool 0.0.1")
+		console.log("Phonegap build tool 0.0.1");
 		console.log("***** CLEANING *****");
 		_exec("rm -R platforms/android", callback);
 	},
