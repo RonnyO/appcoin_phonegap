@@ -53,6 +53,7 @@ var PLUGINS = [
 	"https://github.com/phonegap-build/PushPlugin.git",
 	"https://github.com/VersoSolutions/CordovaClipboard.git",
 	"https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
+	"https://github.com/ohh2ahh/AppAvailability.git",
 	"org.apache.cordova.camera",
 	"org.apache.cordova.console",
 	"org.apache.cordova.device",
@@ -61,6 +62,8 @@ var PLUGINS = [
 	"org.apache.cordova.inappbrowser",
 	"org.apache.cordova.vibration",
 	"io.branchmetrics.branchreferral",
+	'lib/phonegap-facebook-plugin-master --variable APP_ID="' + config.facebookAppID + '" --variable APP_NAME="'+ config.facebookAppName +'"',
+	'lib/android-referral',
 ];
 
 async.waterfall([
@@ -96,11 +99,6 @@ async.waterfall([
 		async.forEachSeries(PLUGINS, function (plugin, callback) {
 			_exec("phonegap plugin add " + plugin, callback);
 		}, callback);
-	},
-	function (callback) {
-		var appID = config.facebookAppID;
-		var appName = config.facebookAppName;
-		_exec('phonegap plugin add ./phonegap-facebook-plugin-master --variable APP_ID="' + appID + '" --variable APP_NAME="'+ appName +'"', callback);
 	}
 ], function (err) {
 	console.log("FINISH: " + (err?err:"OK"));
