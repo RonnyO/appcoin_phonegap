@@ -40,6 +40,7 @@ if (rootdir) {
             replace_string_in_file(fullfilename, "_AC_PROTOCOL_AC_", configobj[target].protocol);
             replace_string_in_file(fullfilename, "_AC_HOST_AC_", configobj[target].host);
             replace_string_in_file(fullfilename, "_AC_MARKETNAME_AC_", configobj[target].marketName);
+            replace_string_in_file(fullfilename, "_AC_BUNDLEID_AC_", configobj[target].bundleID)
         } else {
             //console.log("missing: "+fullfilename);
         }
