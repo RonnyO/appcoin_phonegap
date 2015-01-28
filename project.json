@@ -1,9 +1,9 @@
 {
 "local":
 	{
-	"protocol": "'http:'",
-	"host" : "'10.0.0.47:3000'",
-	"marketName" : "'levmarket'",
+	"protocol": "http:",
+	"host" : "10.0.0.47:3000",
+	"marketName" : "levmarket",
 	"bundleID" : "appcoin.market.test",
 	"appName": "MarketTest",
 	"description": "Local Description",
@@ -14,9 +14,9 @@
 	},
 "stage":
 	{
-	"protocol": "'http:'",
-	"host" : "'mirror-appcoin-production.herokuapp.com'",
-	"marketName" : "'levmarket'",
+	"protocol": "http:",
+	"host" : "mirror-appcoin-production.herokuapp.com",
+	"marketName" : "levmarket",
 	"bundleID" : "appcoin.market.test",
 	"appName": "MarketTest",
 	"description": "Stage Description",
@@ -27,9 +27,9 @@
 	},
 "levmarket":
 	{
-	"protocol": "'https:'",
-	"host" : "'www.levmarket.co.il'",
-	"marketName" : "'levmarket'",
+	"protocol": "https:",
+	"host" : "www.levmarket.co.il",
+	"marketName" : "levmarket",
 	"bundleID" : "com.appcoin.levmarket",
 	"appName": "Lev Market",
 	"description": "Lev Market Description",
@@ -40,9 +40,9 @@
 	},
 "girim":
 	{
-	"protocol": "'https:'",
-	"host" : "'girim.rondor.org'",
-	"marketName" : "'girim'",
+	"protocol": "https:",
+	"host" : "girim.rondor.org",
+	"marketName" : "girim",
 	"bundleID" : "rondor.market.girim",
 	"appName": "Girim",
 	"description": "Girim Description",
