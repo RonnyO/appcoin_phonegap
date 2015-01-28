@@ -60,16 +60,34 @@
             __NETWORK_CALL_SINCE_LAST_RESUME = false;
         }, false);
         
+        var previousHost = localStorage.getItem("previousHost");
+        var previousProtocol = localStorage.getItem("previousProtocol");
+
         var PG_CONFIG = {
             version: "0.1.6",
-            protocol: _AC_PROTOCOL_AC_,
-            host: localStorage.getItem("previousHost") ? localStorage.getItem("previousHost") : _AC_HOST_AC_,
+            protocol: previousProtocol ? previousProtocol : _AC_PROTOCOL_AC_,
+            host: previousHost ? previousHost : _AC_HOST_AC_,
             instanceName: _AC_MARKETNAME_AC_,
         };
 
+        // get here via backdoor
         if (localStorage.getItem("manual-host-prompt") == "true") {
-            PG_CONFIG.host = prompt("Enter server location:", PG_CONFIG.host);
+            var thePrompt = prompt("Enter server location:", PG_CONFIG.protocol + "//" + PG_CONFIG.host);
+
+            if (thePrompt.substring(0,7) == "http://") {
+                PG_CONFIG.protocol = "http:";
+                PG_CONFIG.host = thePrompt.substring(7);
+            }
+            else if (thePrompt.substring(0,8) == "https://") {
+                PG_CONFIG.protocol = "https:";
+                PG_CONFIG.host = thePrompt.substring(8);                
+            }
+            else
+                PG_CONFIG.host = thePrompt;
+
             localStorage.setItem("previousHost", PG_CONFIG.host);
+            localStorage.setItem("previousProtocol", PG_CONFIG.protocol);
+
             localStorage.removeItem("manual-host-prompt");
         }
 
