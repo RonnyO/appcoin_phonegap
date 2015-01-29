@@ -45,13 +45,13 @@
     </platform>
 
     <platform name="ios">
-        <splash src="res/splash/_TARGET_/ios/iPhone-320x480.jpg" width="320" height="480"/>        
-        <splash src="res/splash/_TARGET_/ios/iPhone-Retina-640x960.jpg" width="640" height="960"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-320x480.png" width="320" height="480"/>        
+        <splash src="res/splash/_TARGET_/ios/iPhone-Retina-640x960.png" width="640" height="960"/>
 
-        <splash src="res/splash/_TARGET_/ios/iPad-768x1024.jpg" width="768" height="1024"/>
-        <splash src="res/splash/_TARGET_/ios/iPad-Retina-1536x2048.jpg" width="1536" height="2048"/>
-        <splash src="res/splash/_TARGET_/ios/iPhone-5-Retina-640x1136.jpg" width="640" height="1136"/>
-        <splash src="res/splash/_TARGET_/ios/iPhone-6-750x1334.jpg" width="750" height="1334"/>
-        <splash src="res/splash/_TARGET_/ios/iPhone-6-Plus-1242x2208.jpg" width="1242" height="2208"/>
+        <splash src="res/splash/_TARGET_/ios/iPad-768x1024.png" width="768" height="1024"/>
+        <splash src="res/splash/_TARGET_/ios/iPad-Retina-1536x2048.png" width="1536" height="2048"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-5-Retina-640x1136.png" width="640" height="1136"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-6-750x1334.png" width="750" height="1334"/>
+        <splash src="res/splash/_TARGET_/ios/iPhone-6-Plus-1242x2208.png" width="1242" height="2208"/>
     </platform>
 </widget>
