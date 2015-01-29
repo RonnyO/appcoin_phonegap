@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    id="com.appcoin.plugins.AndroidReferrer"
+    version="2.4.0">
+
+  <name>PushPlugin</name>
+	<author>Bob Easterday</author>
+
+	<description>
+		This plugin allows JS to access the Android refferal string. 
+	</description>
+
+	<license>MIT</license>
+
+	<js-module src="www/AndroidReferrer.js" name="AndroidReferrer">
+        <clobbers target="AndroidReferrer" />
+	</js-module>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+	<!-- android -->
+	<platform name="android">
+
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		</config-file>
+
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<receiver android:name="com.appcoin.plugins.androidreferrer.AndroidReferrerReceiver" android:exported="true">
+			  <intent-filter>
+			    <action android:name="com.android.vending.INSTALL_REFERRER" />
+			  </intent-filter>
+			</receiver>
+		</config-file>
+
+		<config-file target="config.xml" parent="/*">
+            <feature name="AndroidReferrer">
+                <param name="android-package" value="com.appcoin.plugins.androidreferrer.AndroidReferrer" onload="true" />
+            </feature>
+        </config-file>
+
+		<source-file src="src/android/com/appcoin/plugins/androidreferrer/AndroidReferrerReceiver.java" target-dir="src/android/com/appcoin/plugins/androidreferrer/" />
+		<source-file src="src/android/com/appcoin/plugins/androidreferrer/AndroidReferrer.java" target-dir="src/android/com/appcoin/plugins/androidreferrer/" />
+
+	</platform>
+
+
+
+</plugin>
