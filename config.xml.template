@@ -6,7 +6,9 @@
     <content src="app.html" />
     <access origin="*" />
 
+    <!-- we don't show Android splash, until we can solve the stretch issue
     <preference name="SplashScreen" value="screen"/>
+    -->
 
     <platform name="ios">
         <icon src="res/icon/_TARGET_/ios/icon-60.png" width="60" height="60" />
