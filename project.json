@@ -10,7 +10,8 @@
 	"authorEmail": "yotam@appcoin.me",
 	"authorName": "Appcoin",
 	"facebookAppID": "139398209567366",
-	"facebookAppName": "Appcoin Test"
+	"facebookAppName": "Appcoin Test",
+	"serverEnvName": ""
 	},
 "stage":
 	{
@@ -23,7 +24,8 @@
 	"authorEmail": "yotam@appcoin.me",
 	"authorName": "Appcoin",
 	"facebookAppID": "139398209567366",
-	"facebookAppName": "Appcoin Test"
+	"facebookAppName": "Appcoin Test",
+	"serverEnvName": "mirror"
 	},
 "levmarket":
 	{
@@ -36,7 +38,8 @@
 	"authorEmail": "yotam@appcoin.me",
 	"authorName": "Appcoin",
 	"facebookAppID": "1493447430881594",
-	"facebookAppName": "Lev Market"
+	"facebookAppName": "Lev Market",
+	"serverEnvName": "production"
 	},
 "girim":
 	{
@@ -49,6 +52,7 @@
 	"authorEmail": "yotam@appcoin.me",
 	"authorName": "Appcoin",
 	"facebookAppID": "423664101072038",
-	"facebookAppName": "Girim"
+	"facebookAppName": "Girim",
+	"serverEnvName": "production"
 	}
 }
