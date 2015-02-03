@@ -13,10 +13,10 @@
 	"facebookAppName": "Appcoin Test",
 	"serverEnvName": ""
 	},
-"stage":
+"mirror":
 	{
 	"protocol": "http:",
-	"host" : "mirror-appcoin-production.herokuapp.com",
+	"host" : "mirror.appcoin.me",
 	"marketName" : "levmarket",
 	"bundleID" : "appcoin.market.test",
 	"appName": "MarketTest",
