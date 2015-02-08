@@ -61,6 +61,7 @@ var PLUGINS = [
 	"org.apache.cordova.geolocation",
 	"org.apache.cordova.inappbrowser",
 	"org.apache.cordova.vibration",
+	"org.apache.cordova.dialogs",
 	"io.branchmetrics.branchreferral",
 	'lib/phonegap-facebook-plugin-master --variable APP_ID="' + config.facebookAppID + '" --variable APP_NAME="'+ config.facebookAppName +'"',
 	'lib/android-referral',

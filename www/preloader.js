@@ -54,12 +54,10 @@ var thePreloader = {
 
         self._loadJSON(STATIC_PATH+"version.json?"+Math.random(), function (err, json) {
             if (err) {
-                // possibly we are pointining to a host with different http/https than us, from previous build
-                if (localStorage.getItem("previousHost")) {
-                    localStorage.removeItem("previousHost");
-                    return window.location.reload();
-                }
-                return alert("Can't get version.json");
+                var message = "Sorry... our service is unavailable currently. Please try again later.";
+                return navigator.notification.alert(message, function () {
+                    self._loadVersionAndSetupRequire(callback);
+                }, "", "Reload");
             }
 
 

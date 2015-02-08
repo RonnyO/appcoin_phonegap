@@ -63,7 +63,7 @@
         var previousProtocol = localStorage.getItem("previousProtocol");
 
         var PG_CONFIG = {
-            version: "0.1.10",
+            version: "0.1.11",
             protocol: previousProtocol ? previousProtocol : "_AC_PROTOCOL_AC_",
             host: previousHost ? previousHost : "_AC_HOST_AC_",
             instanceName: "_AC_MARKETNAME_AC_",
@@ -103,7 +103,9 @@
 
 		localStorage.setItem("isPhonegap", "1");
 
-		thePreloader.load();
+        document.addEventListener("deviceready", function () {
+            thePreloader.load();
+        }, false);
 	</script>
 
 </body>
