@@ -41,6 +41,20 @@
 	"facebookAppName": "Lev Market",
 	"serverEnvName": "production"
 	},
+"levmarket_android":
+	{
+	"protocol": "https:",
+	"host" : "www.levmarket.co.il",
+	"marketName" : "levmarket",
+	"bundleID" : "com.levmarket.market",
+	"appName": "Lev Market",
+	"description": "Lev Market Description",
+	"authorEmail": "yotam@appcoin.me",
+	"authorName": "Appcoin",
+	"facebookAppID": "1493447430881594",
+	"facebookAppName": "Lev Market",
+	"serverEnvName": "production"
+	},
 "girim":
 	{
 	"protocol": "https:",
