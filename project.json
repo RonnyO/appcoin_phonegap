@@ -68,5 +68,19 @@
 	"facebookAppID": "423664101072038",
 	"facebookAppName": "Girim",
 	"serverEnvName": "production"
+	},
+"girim_mirror":
+	{
+	"protocol": "http:",
+	"host" : "mirror.appcoin.me",
+	"marketName" : "girim",
+	"bundleID" : "appcoin.market.test",
+	"appName": "MarketTest",
+	"description": "Girim Mirror",
+	"authorEmail": "yotam@appcoin.me",
+	"authorName": "Appcoin",
+	"facebookAppID": "1493447430881594",
+	"facebookAppName": "Girim",
+	"serverEnvName": "mirror"
 	}
 }
