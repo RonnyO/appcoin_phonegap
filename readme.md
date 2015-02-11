@@ -6,6 +6,9 @@ Directory Contents
   plugins: installed plugins
   www: our phonegap entry point directory, containing the phonegap market preloader materials
 
+Project.json
+  Configurations per target name.
+
 Adding/Removing platform
 
   cordova platform add ios
@@ -25,7 +28,7 @@ Running on iOS emulator (also builds)
 
   cordova emulate ios
 
-Build/Run for target:
+Build/Run for target (see project.json for target names):
 
   TARGET=local cordova emulate ios
   TARGET=local cordova build ios
