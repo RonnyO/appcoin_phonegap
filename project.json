@@ -15,7 +15,7 @@
 	},
 "mirror":
 	{
-	"protocol": "http:",
+	"protocol": "https:",
 	"host" : "mirror.appcoin.me",
 	"marketName" : "levmarket",
 	"bundleID" : "appcoin.market.test",
@@ -71,7 +71,7 @@
 	},
 "girim_mirror":
 	{
-	"protocol": "http:",
+	"protocol": "https:",
 	"host" : "mirror.appcoin.me",
 	"marketName" : "girim",
 	"bundleID" : "appcoin.market.test",
