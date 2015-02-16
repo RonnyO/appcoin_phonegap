@@ -56,4 +56,6 @@
         <splash src="res/splash/_TARGET_/ios/iPhone-6-750x1334.png" width="750" height="1334"/>
         <splash src="res/splash/_TARGET_/ios/iPhone-6-Plus-1242x2208.png" width="1242" height="2208"/>
     </platform>
+
+    <preference name="orientation" value="portrait" />
 </widget>
