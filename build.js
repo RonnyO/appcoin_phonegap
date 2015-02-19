@@ -67,17 +67,24 @@ var PLUGINS = [
 	'lib/android-referral',
 ];
 
+function _removeDirIgnoreError(dir, callback) {
+	_exec("rm -R " + dir, function (err, result) {
+		if (err) console.log("WARNING, error during remove: " + err);
+		callback(null,null);
+	});
+}
+
 async.waterfall([
 	function (callback) {
 		console.log("Phonegap build tool 0.0.1");
 		console.log("***** CLEANING *****");
-		_exec("rm -R platforms/android", callback);
+		_removeDirIgnoreError("platforms/android", callback);
 	},
 	function (unused, callback) {
-		_exec("rm -R platforms/ios", callback);
+		_removeDirIgnoreError("platforms/ios", callback);
 	},
 	function (unused, callback) {
-		_exec("rm -R plugins", callback);
+		_removeDirIgnoreError("plugins", callback);
 	},
 	function (unused, callback) {
 		console.log("***** CREATING PHONEGAP ENVIRONMENT *****");
