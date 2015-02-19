@@ -49,16 +49,6 @@
 	<div id="pageContainer"></div>
 	
 	<script type="text/javascript">
-        var __NETWORK_CALL_SINCE_LAST_RESUME = false; // set to false in application pause/resume and to true when application sends ajax
-        document.addEventListener("pause", function () {
-            console.log("on pause");
-            __NETWORK_CALL_SINCE_LAST_RESUME = false;
-        }, false);
-        document.addEventListener("resume", function () {
-            console.log("on resume");
-            __NETWORK_CALL_SINCE_LAST_RESUME = false;
-        }, false);
-        
         var previousHost = localStorage.getItem("previousHost");
         var previousProtocol = localStorage.getItem("previousProtocol");
 
