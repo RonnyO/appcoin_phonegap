@@ -1,4 +1,4 @@
-package info.asankan.phonegap.smsplugin;
+package com.appcoin.plugins.smsreceiver;
 
 import android.app.Activity;
 import android.content.IntentFilter;
@@ -11,8 +11,6 @@ import org.json.JSONException;
 
 public class SmsPlugin extends CordovaPlugin {
     //for message sending
-	public final String ACTION_SEND_SMS = "SendSMS";
-    private SmsSender smsSender;
 
     //for message receiving
     public final String ACTION_HAS_SMS_POSSIBILITY = "HasSMSPossibility";
@@ -25,26 +23,7 @@ public class SmsPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-		if (action.equals(ACTION_SEND_SMS)) {
-			try {				
-				String phoneNumber = args.getString(0);
-				String message = args.getString(1);
-				String method = args.getString(2);
-                smsSender=new SmsSender(this.cordova.getActivity());
-				if(method.equalsIgnoreCase("INTENT")){
-                    smsSender.invokeSMSIntent(phoneNumber,message);
-                    callbackContext.sendPluginResult(new PluginResult( PluginResult.Status.NO_RESULT));
-				} else{
-                    smsSender.sendSMS(phoneNumber,message);
-				}
-				
-				callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK));
-				return true;
-			}
-			catch (JSONException ex) {
-				callbackContext.sendPluginResult(new PluginResult( PluginResult.Status.JSON_EXCEPTION));
-			}			
-		}else if(action.equals(ACTION_HAS_SMS_POSSIBILITY)){
+		if (action.equals(ACTION_HAS_SMS_POSSIBILITY)) {
             Activity ctx = this.cordova.getActivity();
             if(ctx.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY)){
                 callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, true));
@@ -52,7 +31,7 @@ public class SmsPlugin extends CordovaPlugin {
                 callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, false));
             }
             return true;
-        }else if (action.equals(ACTION_RECEIVE_SMS)) {
+        } else if (action.equals(ACTION_RECEIVE_SMS)) {
 
             // if already receiving (this case can happen if the startReception is called
             // several times

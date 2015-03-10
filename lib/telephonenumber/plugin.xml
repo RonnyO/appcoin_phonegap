@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.appcoin.plugins.TelephoneNumber"
+        version="1.0.0">
+    <name>Phone Number Plugin</name>
+    <author>Appcoin</author>
+
+    <description>
+        This plugin allows JS to access the phone number on Android.
+    </description>
+
+    <license>MIT</license>
+    <js-module src="www/TelephoneNumber.js" name="TelephoneNumber">
+        <clobbers target="TelephoneNumber" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova-android" version=">=3.0.0"/>
+    </engines>
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="TelephoneNumber">
+                <param name="android-package" value="com.appcoin.plugins.telephonenumber.TelephoneNumber" onload="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/appcoin/plugins/telephonenumber/TelephoneNumber.java" target-dir="src/android/com/appcoin/plugins/telephonenumber/" />
+    </platform>
+</plugin>
