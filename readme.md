@@ -1,7 +1,7 @@
 
 Directory Contents
 
-  hooks: scripts to be run during build process
+  hooks: scripts to be run during build process.
   platforms: platform specific generated files
   plugins: installed plugins
   www: our phonegap entry point directory, containing the phonegap market preloader materials
