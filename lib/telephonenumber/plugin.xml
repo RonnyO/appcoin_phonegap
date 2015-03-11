@@ -12,15 +12,16 @@
     </description>
 
     <license>MIT</license>
-    <js-module src="www/TelephoneNumber.js" name="TelephoneNumber">
-        <clobbers target="TelephoneNumber" />
-    </js-module>
 
     <engines>
         <engine name="cordova-android" version=">=3.0.0"/>
     </engines>
 
     <platform name="android">
+        <js-module src="www/TelephoneNumber.js" name="TelephoneNumber">
+            <clobbers target="TelephoneNumber" />
+        </js-module>
+
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         </config-file>

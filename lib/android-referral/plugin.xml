@@ -15,16 +15,15 @@
 
 	<license>MIT</license>
 
-	<js-module src="www/AndroidReferrer.js" name="AndroidReferrer">
-        <clobbers target="AndroidReferrer" />
-	</js-module>
-
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
 	</engines>
 
 	<!-- android -->
 	<platform name="android">
+		<js-module src="www/AndroidReferrer.js" name="AndroidReferrer">
+			<clobbers target="AndroidReferrer" />
+		</js-module>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
