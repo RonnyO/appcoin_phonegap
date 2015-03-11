@@ -7,10 +7,9 @@ import android.os.Bundle;
 import android.telephony.SmsMessage;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
+import org.json.JSONObject;
+import org.json.JSONException;
 
-/**
- * Created by Asanka on 12/16/13.
- */
 public class SmsReceiver extends BroadcastReceiver {
 
     public static final String SMS_EXTRA_NAME="pdus";
@@ -32,10 +31,15 @@ public class SmsReceiver extends BroadcastReceiver {
                 SmsMessage sms=SmsMessage.createFromPdu((byte[])smsExtra[i]);
                 if(isReceiving && callback_receive!=null)
                 {
-                    String formattedMsg=sms.getOriginatingAddress()+">"+sms.getMessageBody();
-                    PluginResult result=new PluginResult(PluginResult.Status.OK,formattedMsg);
-                    result.setKeepCallback(true);
-                    callback_receive.sendPluginResult(result);
+                    try {
+                        JSONObject message = new JSONObject();
+                        message.put("sender", sms.getOriginatingAddress()).put("body", sms.getMessageBody());
+                        PluginResult result=new PluginResult(PluginResult.Status.OK, message);
+                        result.setKeepCallback(true);
+                        callback_receive.sendPluginResult(result);
+                    } catch (JSONException e) {
+
+                    }
                 }
             }
 

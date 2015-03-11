@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="info.asankan.phonegap.smsplugin"
+	id="com.appcoin.plugins.SmsReceiver"
 	version="0.1.0">
 
 	<name>SMSReceiver</name>
@@ -28,8 +28,8 @@
 	<!-- android -->
 	<platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="SMSPlugin">
-				<param name="android-package" value="com.appcoin.plugins.smsreceiver.SmsReceiver" />
+			<feature name="SmsPlugin">
+				<param name="android-package" value="com.appcoin.plugins.smsreceiver.SmsPlugin" />
 			</feature>
 		</config-file>
 
